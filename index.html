@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>中小学语数英开学预习</title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                // 设计稿的宽度
+                designWidth = 750,
+                calc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (clientWidth > 677) {
+                        clientWidth = 677
+                    };
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 40 * (clientWidth / designWidth) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, calc, false);
+            doc.addEventListener('DOMContentLoaded', calc, false);
+        })(document, window);
+    </script>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script src="./js/zepto.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./layui/layui.js"></script>
+  
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- 头部 -->
+        <div class="cover-box">
+            <img src="./image/cover.jpg" alt="">
+        </div>
+
+        <!-- 年级选择 -->
+        <div class="level-box">
+            <ul class="level-list">
+                <li data-id="1" data-full="0">一年级</li>
+                <li data-id="2" data-full="1">二年级</li>
+                <li data-id="3" data-full="0">三年级</li>
+                <li data-id="4" data-full="1">四年级</li>
+                <li data-id="5" data-full="0">五年级</li>
+                <li data-id="6" data-full="1">六年级</li>
+                <li data-id="7" data-full="0">初中</li>
+                <li data-id="7" data-full="1">高中</li>
+            </ul>
+        </div>
+        <div class="scan-box">
+            <span class="left-circle"></span>
+            <span class="right-circle"></span>
+            <div>
+                <ul>
+                    <!-- 欢迎界面背景 -->
+                    <li class="level-item" style="display:block;">
+                        <img src="./image/tip.jpeg" alt="" style="width:100%;height:100%">
+                    </li>
+
+                    <!-- 年级选择对应界面 -->
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>一年级</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <!-- <div class="code-box">
+                                    <img src="./image/code.png" alt="">
+                                </div> -->
+                            <!-- 二维码提示 -->
+                            <div class="tip-text"> 请从已选择的群进入，联系老师拉你进群 </div>
+                        </div>
+                    </li>
+
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>二年级</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <div class="code-box">
+                                <img src="./image/code.png" alt="">
+                            </div>
+                            <!-- 二维码提示 -->
+                            <!-- <div class="tip-text">
+                                    请从已选择的群进入，联系老师拉你进群
+                                </div> -->
+                        </div>
+                    </li>
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>三年级</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <!-- <div class="code-box">
+                                    <img src="./image/code.png" alt="">
+                                </div> -->
+                            <!-- 二维码提示 -->
+                            <div class="tip-text"> 请从已选择的群进入，联系老师拉你进群 </div>
+                        </div>
+                    </li>
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>四年级</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <div class="code-box">
+                                <img src="./image/code.png" alt="">
+                            </div>
+                            <!-- 二维码提示 -->
+                            <!-- <div class="tip-text">
+                                    请从已选择的群进入，联系老师拉你进群
+                                </div> -->
+                        </div>
+                    </li>
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>五年级</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <!-- <div class="code-box">
+                                        <img src="./image/code.png" alt="">
+                                </div> -->
+
+                            <!-- 二维码提示 -->
+                            <div class="tip-text"> 请从已选择的群进入，联系老师拉你进群 </div>
+                        </div>
+                    </li>
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>六年级</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <div class="code-box">
+                                <img src="./image/code.png" alt="">
+                            </div>
+                            <!-- 二维码提示 -->
+                            <!-- <div class="tip-text">
+                                    请从已选择的群进入，联系老师拉你进群
+                                </div> -->
+                        </div>
+                    </li>
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>初中</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <!-- <div class="code-box">
+                                    <img src="./image/code.png" alt="">
+                                </div> -->
+                            <!-- 二维码提示 -->
+                            <div class="tip-text"> 请从已选择的群进入，联系老师拉你进群 </div>
+                        </div>
+                    </li>
+
+                    <li class="level-item">
+                        <div class="title-box">
+                            <p>高中</p>
+                            <p class="bottom-line"></p>
+                        </div>
+                        <p class="scan-code">扫码入群预习</p>
+                        <div class="scan-img">
+                            <!-- 二维码边框 -->
+                            <div class="border-box">
+                                <img src="./image/border.jpeg" alt="">
+                            </div>
+                            <!-- 二维码图片 -->
+                            <div class="code-box">
+                                <img src="./image/code.png" alt="">
+                            </div>
+                            <!-- 二维码提示 -->
+                            <!-- <div class="tip-text">
+                                    请从已选择的群进入，联系老师拉你进群
+                                </div> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tip-box" style="display:none">
+            <span class="false"><i class="fa fa-times-circle"
+                    style="margin-right: .2rem;"></i>您已达到选择群的上限，请从已选择的群进入</span>
+            <span class="right"><i class="fa fa-check-circle-o"></i> 此二维码已通过安全认证，可以放心扫码</span>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
